@@ -25,12 +25,12 @@ return {
     }
 
     dashboard.section.buttons.val = {
-      button("LDR f p", " Open Project  "),
-      button("LDR n  ", " New File  "),
-      button("LDR f f", "󰈞 Find File  "),
-      button("LDR f o", "󰊄 Recents  "),
-      button("LDR f g", "󰈬 Find Word  "),
-      button("LDR f '", " Bookmarks  "),
+      button("LDR fp", " Open Project  "),
+      button("LDR n", " New File  "),
+      button("LDR ff", "󰈞 Find File  "),
+      button("LDR fo", "󰊄 Recents  "),
+      button("LDR fg", "󰈬 Find Word  "),
+      button("LDR f'", " Bookmarks  "),
     }
 
     dashboard.config.layout = {
