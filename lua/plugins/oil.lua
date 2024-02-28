@@ -4,6 +4,12 @@ return {
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
 		require("oil").setup({
+			float = {
+				padding = 5,
+				win_options = {
+					winblend = 10, -- change the value here
+				},
+			},
 			use_default_keymaps = false,
 			view_options = {
 				show_hidden = true,
@@ -32,6 +38,8 @@ return {
 			},
 		})
 
-		vim.keymap.set("n", "<leader>e", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+		vim.keymap.set("n", "<leader>e", function()
+			require("oil").open_float()
+		end, { desc = "Open Explorer in floating mode" })
 	end,
 }
