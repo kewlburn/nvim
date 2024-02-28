@@ -11,6 +11,7 @@ vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
 vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
 vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 
-vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
-vim.keymap.set('n', '<leader>fn', ':ene<CR>')
+vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>', { desc = 'Disable Highlight Search' })
+vim.keymap.set('n', '<leader>fn', ':ene<CR>', { desc = 'New File' })
+vim.keymap.set('n', '<leader>lg', ':LazyGit<CR>', { desc = 'LazyGit' })
 vim.wo.number = true
