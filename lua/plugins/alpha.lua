@@ -30,7 +30,6 @@ return {
       button("LDR ff", "󰈞 Find File  "),
       button("LDR fo", "󰊄 Recents  "),
       button("LDR fg", "󰈬 Find Word  "),
-      button("LDR f'", " Bookmarks  "),
     }
 
     dashboard.config.layout = {
