@@ -70,7 +70,7 @@ return {
 			require("telescope").load_extension("ui-select")
 			require("telescope").load_extension("project")
 
-			vim.keymap.set("n", "<leader>fp", "<CMD>lua require'telescope'.extensions.project.project{}<CR>", {})
+			vim.keymap.set("n", "<leader>fp", "<CMD>lua require'telescope'.extensions.project.project{}<CR>", { desc = "Find Projects" })
 		end,
 	},
 }
