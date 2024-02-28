@@ -3,7 +3,7 @@ return {
   config = function()
     require("telescope").load_extension "frecency"
 
-    vim.keymap.set("n", "<leader>fo", "<Cmd>Telescope frecency workspace=CWD<CR>")
+    vim.keymap.set("n", "<leader>fo", "<Cmd>Telescope frecency workspace=CWD<CR>", { desc = "Recent Files" })
   end,
 }
 

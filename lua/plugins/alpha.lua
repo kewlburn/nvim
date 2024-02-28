@@ -42,7 +42,6 @@ return {
     }
 
     dashboard.config.opts.noautocmd = true
-    vim.keymap.set("n", "<leader>n", vim.cmd(":enew"), {})
     alpha.setup(dashboard.opts)
   end,
 }
