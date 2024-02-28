@@ -26,7 +26,7 @@ return {
 
     dashboard.section.buttons.val = {
       button("LDR fp", " Open Project  "),
-      button("LDR n", " New File  "),
+      button("LDR fn", " New File  "),
       button("LDR ff", "󰈞 Find File  "),
       button("LDR fo", "󰊄 Recents  "),
       button("LDR fg", "󰈬 Find Word  "),
