@@ -14,5 +14,7 @@ vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
 vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>", { desc = "Disable Highlight Search" })
 vim.keymap.set("n", "<leader>fn", ":ene<CR>", { desc = "New File" })
 vim.keymap.set("n", "<leader>lg", ":LazyGit<CR>", { desc = "LazyGit" })
-vim.keymap.set("n", "<leader>c", ":bd<CR>", { desc = "Close current buffer" })
+vim.keymap.set("n", "<leader>w", ":bd<CR>", { desc = "Close current buffer" })
+
+vim.opt.clipboard = "unnamedplus"
 vim.wo.number = true
