@@ -18,3 +18,5 @@ vim.keymap.set("n", "<leader>w", ":bd<CR>", { desc = "Close current buffer" })
 
 vim.opt.clipboard = "unnamedplus"
 vim.wo.number = true
+vim.opt.list = true
+vim.opt.listchars:append("space:·")
