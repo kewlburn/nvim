@@ -16,6 +16,11 @@ vim.keymap.set("n", "<leader>fn", ":ene<CR>", { desc = "New File" })
 vim.keymap.set("n", "<leader>lg", ":LazyGit<CR>", { desc = "LazyGit" })
 vim.keymap.set("n", "<leader>w", ":bd<CR>", { desc = "Close current buffer" })
 
+vim.keymap.set("n", "<Tab>", ">>", { desc = "Indent", noremap = true, silent = true })
+vim.keymap.set("n", "<S-Tab>", "<<", { desc = "Unindent", noremap = true, silent = true })
+vim.keymap.set("v", "<Tab>", ">gv", { desc = "Indent", noremap = true, silent = true })
+vim.keymap.set("v", "<S-Tab>", "<gv", { desc = "Unindent", noremap = true, silent = true })
+
 vim.opt.clipboard = "unnamedplus"
 vim.wo.number = true
 vim.opt.list = true
