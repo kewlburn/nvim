@@ -11,6 +11,7 @@ return {
           null_ls.builtins.formatting.stylua,
           null_ls.builtins.formatting.prettier,
           null_ls.builtins.formatting.phpcsfixer,
+          require("none-ls.diagnostics.eslint"),
         },
         on_attach = function(client, bufnr)
           if client.supports_method("textDocument/formatting") then
@@ -26,7 +27,6 @@ return {
         end,
       })
 
-      null_ls.register(require("none-ls.diagnostics.eslint_d"))
       vim.keymap.set("n", "<leader>gf", function()
         vim.lsp.buf.format({ timeout = 5000 })
       end, { desc = "Prettify" })
