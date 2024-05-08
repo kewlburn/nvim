@@ -20,7 +20,7 @@ return {
               group = augroup,
               buffer = bufnr,
               callback = function()
-                vim.lsp.buf.format({ async = false, timeout = 5000 })
+                vim.lsp.buf.format({ async = false, timeout_ms = 2000 })
               end,
             })
           end
@@ -28,7 +28,7 @@ return {
       })
 
       vim.keymap.set("n", "<leader>gf", function()
-        vim.lsp.buf.format({ timeout = 5000 })
+        vim.lsp.buf.format({ timeout_ms = 2000 })
       end, { desc = "Prettify" })
     end,
   },
