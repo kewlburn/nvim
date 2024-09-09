@@ -15,6 +15,8 @@ return {
       javascript = { "eslint_d" },
       -- https://github.com/zaach/jsonlint
       json = { "jsonlint" },
+      -- https://github.com/mpeterv/luacheck
+      lua = { "luacheck" },
       -- https://github.com/mrtazz/checkmake
       make = { "checkmake" },
       -- https://alexjs.com/

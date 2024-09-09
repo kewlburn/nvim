@@ -10,8 +10,7 @@ return {
         -- https://www.gnu.org/software/gawk/manual/gawk.html
         awk = { "awk" },
         -- https://dart.dev/tools/dart-format
-        -- https://dcm.dev/docs/cli/formatting/format/
-        dart = { "dart_format", "dcm_format" },
+        dart = { "dart_format" },
         -- https://github.com/mvdan/gofumpt
         -- https://pkg.go.dev/golang.org/x/tools/cmd/goimports (auto imports)
         -- https://github.com/incu6us/goimports-reviser
@@ -24,6 +23,8 @@ return {
         jq = { "jq" },
         -- https://github.com/rhysd/fixjson
         json = { "fixjson" },
+        -- https://github.com/Koihik/LuaFormatter
+        lua = { "lua-format" },
         -- https://github.com/executablebooks/mdformat
         markdown = { "mdformat" },
         -- https://github.com/PHP-CS-Fixer/PHP-CS-Fixer
@@ -43,6 +44,8 @@ return {
         yq = { "yq" },
         -- https://github.com/koalaman/shellcheck
         zsh = { "shellcheck" },
+        -- Use the "*" filetype to run formatters on all filetypes.
+        ["*"] = { "codespell" },
       },
       -- NOTE: The gofumpt formatter isn't working properly.
       -- So although I have the below configured, I rely on an autocmd instead.
