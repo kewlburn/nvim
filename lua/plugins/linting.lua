@@ -59,9 +59,7 @@ return {
         -- https://github.com/rhysd/actionlint
         -- https://github.com/adrienverge/yamllint (https://yamllint.readthedocs.io/en/stable/rules.html)
         -- https://github.com/stoplightio/spectral (`npm install -g @stoplight/spectral-cli`)
-        vim.api.nvim_create_autocmd({
-            "BufReadPost", "BufWritePost", "InsertLeave"
-        }, {
+        vim.api.nvim_create_autocmd({"BufReadPost", "BufWritePost"}, {
             group = vim.api.nvim_create_augroup("Linting", {clear = true}),
             callback = function(ev)
                 -- print(string.format('event fired: %s', vim.inspect(ev)))
