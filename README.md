@@ -1,1 +1,1 @@
-# Neovim Configuration
+# Neovim Personal Configuration
