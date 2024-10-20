@@ -77,7 +77,9 @@ It leverages modern plugins to enhance Neovim’s built-in features.
     system.
 -   [lazygit](https://github.com/jesseduffield/lazygit) Simple terminal UI for git
     commands.
+-   neovim 0.10
 
+> [!WARNING]
 > Not everything on the list is up to date, use it at your own risk.
 
 ## LSP (Mason)
