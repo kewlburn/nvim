@@ -24,8 +24,8 @@ return {
         jq = { "jq" },
         -- https://github.com/prettier/prettier
         json = { "prettier" },
-        -- https://github.com/Koihik/LuaFormatter
-        lua = { "lua-format" },
+        -- https://github.com/JohnnyMorganz/StyLua
+        lua = { "stylua" },
         -- https://github.com/prettier/prettier
         markdown = { "prettier" },
         -- https://github.com/PHP-CS-Fixer/PHP-CS-Fixer
