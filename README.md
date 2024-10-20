@@ -81,8 +81,9 @@ It leverages modern plugins to enhance Neovim’s built-in features.
 
 ## Screenshots
 
-![Screen Shot 2024-10-20 at 9 53 22 AM](https://github.com/user-attachments/assets/d8778ea2-3ef8-4d64-ba26-2a68c70f5449)
-![Screen Shot 2024-10-20 at 9 54 09 AM](https://github.com/user-attachments/assets/88330a06-9874-44ff-9b08-48f8d1297121)
+![Alpha](https://github.com/user-attachments/assets/d8778ea2-3ef8-4d64-ba26-2a68c70f5449)
+![Lazygit](https://github.com/user-attachments/assets/88330a06-9874-44ff-9b08-48f8d1297121)
+![Oil](https://github.com/user-attachments/assets/3b2d51bb-f6b8-482d-8970-d84332c2cb27)
 
 > [!WARNING]
 > Not everything on the list is up to date, use it at your own risk.
