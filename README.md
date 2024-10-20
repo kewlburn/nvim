@@ -73,11 +73,16 @@ It leverages modern plugins to enhance Neovim’s built-in features.
 
 ## Requirements
 
--   [git](https://git-scm.com/]) A free and open source distributed version control
+-   [git](https://git-scm.com/) A free and open source distributed version control
     system.
 -   [lazygit](https://github.com/jesseduffield/lazygit) Simple terminal UI for git
     commands.
 -   neovim 0.10
+
+## Screenshots
+
+![Screen Shot 2024-10-20 at 9 53 22 AM](https://github.com/user-attachments/assets/d8778ea2-3ef8-4d64-ba26-2a68c70f5449)
+![Screen Shot 2024-10-20 at 9 54 09 AM](https://github.com/user-attachments/assets/88330a06-9874-44ff-9b08-48f8d1297121)
 
 > [!WARNING]
 > Not everything on the list is up to date, use it at your own risk.
