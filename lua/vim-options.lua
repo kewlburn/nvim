@@ -27,6 +27,7 @@ vim.opt.list = true
 vim.opt.listchars:append("space:·")
 vim.opt.cursorline = true
 
+-- Disable colorcolumn in Oil and Telescope
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "*",
   callback = function()
@@ -38,5 +39,14 @@ vim.api.nvim_create_autocmd("FileType", {
     else
       vim.opt_local.colorcolumn = "80"
     end
+  end,
+})
+
+-- Disable line numbers in Oil buffers
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "oil",
+  callback = function()
+    vim.opt_local.number = false
+    vim.opt_local.relativenumber = false
   end,
 })
