@@ -19,10 +19,8 @@ return {
       -- lua = {"luacheck"},
       -- https://github.com/mrtazz/checkmake
       make = { "checkmake" },
-      -- https://alexjs.com/
       -- https://github.com/DavidAnson/markdownlint
-      -- https://docs.getwoke.tech/
-      markdown = { "alex", "markdownlint", "woke" },
+      markdown = { "markdownlint" },
       -- https://github.com/squizlabs/PHP_CodeSniffer
       php = { "phpcs" },
       -- https://github.com/rust-lang/rust-clippy
