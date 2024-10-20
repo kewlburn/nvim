@@ -26,3 +26,17 @@ vim.wo.number = true
 vim.opt.list = true
 vim.opt.listchars:append("space:·")
 vim.opt.cursorline = true
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "*",
+  callback = function()
+    local exclude_ft = { "TelescopePrompt", "oil" }
+    local current_ft = vim.bo.filetype
+
+    if vim.tbl_contains(exclude_ft, current_ft) then
+      vim.opt_local.colorcolumn = ""
+    else
+      vim.opt_local.colorcolumn = "80"
+    end
+  end,
+})
