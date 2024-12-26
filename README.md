@@ -8,7 +8,7 @@ It leverages modern plugins to enhance Neovim’s built-in features.
 
 -   [alpha-nvim](https://github.com/goolord/alpha-nvim) A fast and highly customizable
     greeter for Neovim.
-    [blink.cmp](https://github.com/Saghen/blink.cmp) Performant, batteries-included
+-   [blink.cmp](https://github.com/Saghen/blink.cmp) Performant, batteries-included
     completion plugin for Neovim.
 -   [catppuccin](https://github.com/catppuccin/nvim) A warm, soft-colored Neovim
     theme with various flavors.
