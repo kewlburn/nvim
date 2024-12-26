@@ -26,10 +26,10 @@ return {
         json = { "prettier" },
         -- https://github.com/JohnnyMorganz/StyLua
         lua = { "stylua" },
-        -- https://github.com/prettier/prettier
+        -- https://github.com/pretthttps://phpqa.io/projects/phpcbf.htmlier/prettier
         markdown = { "prettier" },
-        -- https://github.com/PHP-CS-Fixer/PHP-CS-Fixer
-        php = { "php_cs_fixer" },
+        -- https://phpqa.io/projects/phpcbf.html
+        php = { "phpcbf" },
         -- https://github.com/rust-lang/rustfmt
         rust = { "rustfmt" },
         -- https://github.com/koalaman/shellcheck
@@ -87,8 +87,8 @@ return {
     vim.keymap.set("n", "<leader><leader>fd", "<Cmd>FormatDisable<CR>", { desc = "Disable autoformat-on-save" })
     vim.keymap.set("n", "<leader><leader>fe", "<Cmd>FormatEnable<CR>", { desc = "Re-enable autoformat-on-save" })
     vim.keymap.set("n", "<leader><leader>fg", function()
-      vim.cmd("silent !gofumpt -w %")
-    end, { desc = "Format file with gofumpt" })
+      require("conform").format({ async = true })
+    end, { desc = "Format file" })
 
     -- DISABLED: in favour of format_on_save.
     --

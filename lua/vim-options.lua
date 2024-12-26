@@ -26,6 +26,7 @@ vim.wo.number = true
 vim.opt.list = true
 vim.opt.listchars:append("space:·")
 vim.opt.cursorline = true
+vim.g.disable_autoformat = true
 
 -- Disable colorcolumn in Oil and Telescope
 vim.api.nvim_create_autocmd("FileType", {
