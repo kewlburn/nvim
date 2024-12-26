@@ -8,12 +8,10 @@ It leverages modern plugins to enhance Neovim’s built-in features.
 
 -   [alpha-nvim](https://github.com/goolord/alpha-nvim) A fast and highly customizable
     greeter for Neovim.
+    [blink.cmp](https://github.com/Saghen/blink.cmp) Performant, batteries-included
+    completion plugin for Neovim.
 -   [catppuccin](https://github.com/catppuccin/nvim) A warm, soft-colored Neovim
     theme with various flavors.
--   [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp) Neovim LSP source for
-    `nvim-cmp`.
--   [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip) Snippet completion
-    source for `nvim-cmp` using LuaSnip.
 -   [conform.nvim](https://github.com/stevearc/conform.nvim) Lightweight and fast
     autoformatting for Neovim.
 -   [dressing.nvim](https://github.com/stevearc/dressing.nvim) Improve default Neovim
@@ -41,8 +39,6 @@ It leverages modern plugins to enhance Neovim’s built-in features.
     servers.
 -   [mason.nvim](https://github.com/williamboman/mason.nvim) Portable package manager
     for Neovim to install LSP servers, DAP servers, linters, and formatters.
--   [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) A completion engine plugin for
-    Neovim written in Lua.
 -   [nvim-lint](https://github.com/mfussenegger/nvim-lint) An asynchronous linting
     engine for Neovim.
 -   [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) Quickstart configurations
