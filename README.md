@@ -54,6 +54,8 @@ It leverages modern plugins to enhance Neovim’s built-in features.
     that provides an efficient buffer-based interface.
 -   [plenary.nvim](https://github.com/nvim-lua/plenary.nvim) A Lua library with
     essential utilities for building Neovim plugins.
+-   [Switcheroo.nvim](https://github.com/MrSloth-dev/Switcheroo.nvim) A simple colorscheme
+    switcher.
 -   [telescope-frecency.nvim](https://github.com/nvim-telescope/telescope-frecency.nvim)
     Adds smart file sorting by frequency and recency to the Telescope plugin.
 -   [telescope-project.nvim](https://github.com/nvim-telescope/telescope-project.nvim)
