@@ -60,7 +60,9 @@ return {
       menu = {
         border = "rounded",
 
-        auto_show = function(ctx) return ctx.mode ~= 'cmdline' end,
+        auto_show = function(ctx)
+          return ctx.mode ~= 'cmdline'
+        end,
 
         cmdline_position = function()
           if vim.g.ui_cmdline_pos ~= nil then
