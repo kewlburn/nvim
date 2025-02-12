@@ -61,7 +61,7 @@ return {
         border = "rounded",
 
         auto_show = function(ctx)
-          return ctx.mode ~= 'cmdline'
+          return ctx.mode ~= "cmdline"
         end,
 
         cmdline_position = function()
