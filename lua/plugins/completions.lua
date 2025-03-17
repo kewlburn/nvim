@@ -39,6 +39,12 @@ return {
       nerd_font_variant = "mono",
     },
 
+    enabled = function()
+      return not vim.tbl_contains({ "lua", "markdown", "oil" }, vim.bo.filetype)
+        and vim.bo.buftype ~= "prompt"
+        and vim.b.completion ~= false
+    end,
+
     completion = {
       accept = {
         -- experimental auto-brackets support
@@ -59,10 +65,6 @@ return {
 
       menu = {
         border = "rounded",
-
-        auto_show = function(ctx)
-          return ctx.mode ~= "cmdline"
-        end,
 
         cmdline_position = function()
           if vim.g.ui_cmdline_pos ~= nil then
