@@ -17,6 +17,8 @@ return {
       [[   ▀█   █▀   ▀██████▀  ▄█████████▀   ▀██████▀  ████████▀   ▀█████▀   ]],
     }
 
+    dashboard.section.header.opts.hl = "Comment"
+
     dashboard.section.buttons.val = {
       button("<leader>fp", " Open Project"),
       button("<leader>fn", " New File"),
