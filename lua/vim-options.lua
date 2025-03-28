@@ -51,3 +51,5 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.relativenumber = false
   end,
 })
+
+vim.opt.showmode = false
