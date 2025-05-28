@@ -53,6 +53,7 @@ return {
               "pdo",
               "curl",
               "mbstring",
+              "bcmath",
             },
           },
         },
