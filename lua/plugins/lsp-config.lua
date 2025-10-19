@@ -66,6 +66,7 @@ return {
               "filter",
               "random",
               "hash",
+              "openssl",
             },
           },
         },
