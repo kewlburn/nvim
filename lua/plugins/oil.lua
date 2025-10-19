@@ -12,22 +12,43 @@ return {
         win_options = {
           winblend = 0,
         },
-        preview = {
-          max_width = 0.9,
-          min_width = { 40, 0.4 },
-          width = nil,
-          max_height = 0.9,
-          min_height = { 5, 0.1 },
-          height = nil,
-          border = "rounded",
-          win_options = {
-            winblend = 0,
-          },
-          update_on_cursor_moved = true,
-        },
+        preview_split = "right",
         override = function(conf)
           return conf
         end,
+      },
+      preview_win = {
+        update_on_cursor_moved = true,
+        preview_method = "fast_scratch",
+        disable_preview = function(filename)
+          return true
+        end,
+        win_options = {},
+      },
+      confirmation = {
+        max_width = 0.9,
+        min_width = { 40, 0.4 },
+        width = nil,
+        max_height = 0.9,
+        min_height = { 5, 0.1 },
+        height = nil,
+        border = "rounded",
+        win_options = {
+          winblend = 0,
+        },
+      },
+      progress = {
+        max_width = 0.9,
+        min_width = { 40, 0.4 },
+        width = nil,
+        max_height = { 10, 0.9 },
+        min_height = { 5, 0.1 },
+        height = nil,
+        border = "rounded",
+        minimized_border = "none",
+        win_options = {
+          winblend = 0,
+        },
       },
       use_default_keymaps = false,
       view_options = {
