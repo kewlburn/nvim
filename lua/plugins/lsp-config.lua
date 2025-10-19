@@ -18,24 +18,33 @@ return {
     lazy = false,
     config = function()
       local capabilities = require("blink.cmp").get_lsp_capabilities()
+      local on_attach = function(client, bufnr)
+        vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = bufnr })
+        vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { buffer = bufnr })
+        vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, { buffer = bufnr })
+        vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { buffer = bufnr })
+      end
 
-      local lspconfig = require("lspconfig")
-      lspconfig.ts_ls.setup({
+      vim.lsp.config.ts_ls = {
         capabilities = capabilities,
-      })
-      lspconfig.html.setup({
-        capabilities = capabilities,
-      })
-      lspconfig.lua_ls.setup({
-        capabilities = capabilities,
-      })
+        on_attach = on_attach,
+      }
 
-      lspconfig.intelephense.setup({
+      vim.lsp.config.html = {
+        capabilities = capabilities,
+        on_attach = on_attach,
+      }
+
+      vim.lsp.config.lua_ls = {
+        capabilities = capabilities,
+        on_attach = on_attach,
+      }
+
+      vim.lsp.config.intelephense = {
         capabilities = capabilities,
         on_attach = on_attach,
         settings = {
           intelephense = {
-            -- possible values: stubs.txt
             stubs = {
               "Core",
               "SPL",
@@ -54,15 +63,15 @@ return {
               "curl",
               "mbstring",
               "bcmath",
+              "filter",
+              "random",
+              "hash",
             },
           },
         },
-      })
+      }
 
-      vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-      vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
-      vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
-      vim.keymap.set({ "n" }, "<leader>ca", vim.lsp.buf.code_action, {})
+      vim.lsp.enable({ "ts_ls", "html", "lua_ls", "intelephense" })
     end,
   },
 }
