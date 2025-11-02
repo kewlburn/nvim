@@ -40,7 +40,10 @@ return {
 
     local stats = require("lazy").stats()
     local ms = math.floor(stats.startuptime * 100 + 0.5) / 100
-    dashboard.section.footer.val = { "Neovim loaded " .. stats.count .. " plugins  in " .. ms .. "ms" }
+    local version = vim.version()
+    local header = string.format("Neovim v%d.%d.%d", version.major, version.minor, version.patch)
+
+    dashboard.section.footer.val = { header .. " loaded " .. stats.count .. " plugins  in " .. ms .. "ms" }
 
     alpha.setup(dashboard.opts)
   end,
